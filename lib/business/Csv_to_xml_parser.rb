@@ -49,7 +49,7 @@ module Csv_to_xml_parser
             total += "<string-array name=\"#{key}\" >\n#{ items}</string-array>\n"
         end
         
-        new_file = "#{File.dirname(file_location)}/test1.xml"
+        new_file = "#{File.dirname(file_location)}/strings.xml"
         
         if(File.exists?(new_file))
             File.open(new_file, "w"){|file|
