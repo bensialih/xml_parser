@@ -1,13 +1,13 @@
 #lib/busines/Element_editor.rb
 
-require_relative './Delete_xml'
+require 'business/Delete_xml'
 require 'nokogiri'
 require 'htmlentities'
 require 'csv'
 
-
 class Element_editor
 include Delete_xml
+
 @full_text
 attr_accessor :xml_doc, :strings, :string_arrays, :plurals, :csv_file
 attr_reader :filePath, :coder

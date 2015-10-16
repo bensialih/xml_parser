@@ -1,7 +1,7 @@
 #open_browser.rb
+require 'business/peripheral/os_check'
+require 'business/peripheral/CleanFilepath'
 
-require_relative './os_check'
-require_relative './CleanFilepath'
 module Open_browser
     extend OS
     def self.getOS(filepath = nil)
